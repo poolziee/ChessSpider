@@ -9,7 +9,7 @@ The archive page used by ChessSpider: https://www.chess.com/games/archive?gameOw
 
 - You have the Unlimited Game Review feature enabled (Platinum or Diamond subscription) on chess.com.
 - You are logged in your chess.com account via Chrome.
-- You have the Selenium WebDriver package (v4.10.0 or above) in your Python environment.
+- You have the Selenium WebDriver package (v4.10.0) in your Python (v3.8.13) environment.
 - You have ChromeDrive on your machine (https://chromedriver.chromium.org/downloads).
     Download the driver version that matches your Chrome version. To check your version, go to chrome://version.
 
