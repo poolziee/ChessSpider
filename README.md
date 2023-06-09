@@ -3,9 +3,7 @@
 
 ChessSpider is a short script which will automatically browse through your chess.com Live games archive and analyse all games, given start and end page numbers.
 
-The archive page used by ChessSpider: https://www.chess.com/games/archive/{username}?gameOwner=my_game&gameTypes%5B0%5D=chess960&gameTypes%5B1%5D=daily&gameType=live
-
-Replace {username} with your chess.com username.
+The archive page used by ChessSpider: https://www.chess.com/games/archive?gameOwner=my_game&gameType=live
 
 ## Prerequisites
 
@@ -18,8 +16,6 @@ Replace {username} with your chess.com username.
 ## Configurations
 
 Before you execute *spider.py*, you need to add a *config.json* file to the src directory containing the following values:
-
-- `"chess-username"`: The username of your chess.com profile.
 
 - `"start-page"`: The page number from which you want the script to start browsing and analyzing games. (Games archive link from the introduction above)
 
@@ -34,7 +30,6 @@ Before you execute *spider.py*, you need to add a *config.json* file to the src 
 Example *config.json* file:
 ```json
 {
-  "chess-username": "poolziee",
   "start-page": 1,
   "end-page": 100,
   "driver-path": "C:/Drivers/ChromeDriver/chromedriver.exe",
