@@ -33,7 +33,7 @@ Example *config.json* file:
   "start-page": 1,
   "end-page": 100,
   "driver-path": "C:/Drivers/ChromeDriver/chromedriver.exe",
-  "user-data-dir": "C:/Users/poolziee/AppData/Local/Google/Chrome/User Data",
+  "user-data-dir": "C:/Users/username/AppData/Local/Google/Chrome/User Data",
   "profile-directory": "Default"
 }
 ```
