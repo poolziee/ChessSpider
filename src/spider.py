@@ -10,7 +10,6 @@ def randsleep ():
     """
     sleep(randrange(2, 4))
 
-username = config['chess-username']
 page_nr = config['start-page']
 last_page_nr = config['end-page']
 
@@ -19,7 +18,7 @@ driver.maximize_window()
 
 while page_nr <= last_page_nr :
     print(f"Crawling page number {page_nr}...")
-    driver.get(f"https://www.chess.com/games/archive/{username}?gameOwner=my_game&gameTypes%5B0%5D=chess960&gameTypes%5B1%5D=daily&gameType=live&page={page_nr}")
+    driver.get(f"https://www.chess.com/games/archive?gameOwner=my_game&gameType=live&page={page_nr}")
     overview_tab = driver.current_window_handle
     games = driver.find_elements(By.XPATH, '//a[contains(@class,"archive-games-link") and contains(text(), "Review")]')
     if len(games) > 0:
