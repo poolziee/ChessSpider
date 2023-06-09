@@ -5,6 +5,9 @@ from time import sleep
 from selenium.webdriver.common.by import By
 
 def randsleep ():
+    """
+    Delay execution with 2 or 3 seconds.
+    """
     sleep(randrange(2, 4))
 
 username = config['chess-username']

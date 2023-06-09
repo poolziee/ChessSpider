@@ -4,6 +4,9 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 
 def start ():
+    """
+    Configures and starts a Selenium Chrome WebDriver.
+    """
     # Set up Chrome options.
     options = Options()
     options.add_argument(f"--user-data-dir={config['user-data-dir']}")
